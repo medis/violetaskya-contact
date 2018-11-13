@@ -1,0 +1,6 @@
+/.idea
+/vendor
+composer.lock
+yarn-error.log
+.DS_Store
+Thumbs.dbg

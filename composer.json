@@ -1,0 +1,36 @@
+{
+    "name": "medis/violetaskya-contact",
+    "description": "Contact form functionality for violetaskya.com",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Audrius Bukauskas",
+            "email": "aubuka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VioletaskyaContact\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "~5.7.7",
+        "symfony/var-dumper": "^4.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.7"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VioletaskyaContact\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VioletaskyaContact\\AppServiceProvider"
+            ]
+        }
+    }
+}
