@@ -19,6 +19,13 @@ class AppServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/Views', 'violetaskya-frontend');
 
         /**
+         * Publish config.
+         */
+        $this->publishes([
+            __DIR__.'/config/contact.php' => config_path('contact.php'),
+        ]);
+
+        /**
          * Assets.
          */
         if ($this->app->runningInConsole()) {
@@ -30,9 +37,5 @@ class AppServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->commands([
-            Console\InstallCommand::class,
-            Console\UpdateCommand::class
-        ]);
     }
 }

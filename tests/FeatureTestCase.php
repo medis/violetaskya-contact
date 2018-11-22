@@ -1,6 +1,6 @@
 <?php
 
-namespace VioletaskyaFrontend\Tests;
+namespace VioletaskyaContact\Tests;
 
 use Orchestra\Testbench\TestCase;
 use VioletaskyaContact\AppServiceProvider;
@@ -22,5 +22,8 @@ class FeatureTestCase extends TestCase
     {
         $config = $app->get('config');
         $config->set('logging.default', 'errorlog');
+        $config->set('app.MAIL_FROM', 'TestFrom');
+        $config->set('app.MAIL_TO', 'test@example.com');
+        $config->set('app.MAIL_NAME', 'TestMailName');
     }
 }
