@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
          */
         $this->publishes([
             __DIR__.'/config/contact.php' => config_path('contact.php'),
-        ]);
+        ], 'violetaskya-contact-config');
 
         /**
          * Assets.
