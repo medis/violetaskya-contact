@@ -32,7 +32,7 @@ class ContactMail extends BaseMailable
      */
     public function build()
     {
-        return $this->from(config('app.MAIL_FROM'))
+        return $this->from(config('contact.MAIL_FROM'))
             ->subject('VioletaSkya Contact Message')
             ->view('violetaskya-contact::contact')
             ->text('violetaskya-contact::contact_plain');

@@ -24,7 +24,7 @@ class ContactController extends BaseController {
             return;
         }
 
-        $emails = explode(',', config('app.MAIL_TO'));
+        $emails = explode(',', config('contact.MAIL_TO'));
         if (!empty($emails)) {
             $contact = new Contact($post);
 

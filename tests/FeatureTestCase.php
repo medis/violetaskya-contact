@@ -22,8 +22,8 @@ class FeatureTestCase extends TestCase
     {
         $config = $app->get('config');
         $config->set('logging.default', 'errorlog');
-        $config->set('app.MAIL_FROM', 'TestFrom');
-        $config->set('app.MAIL_TO', 'test@example.com');
-        $config->set('app.MAIL_NAME', 'TestMailName');
+        $config->set('contact.MAIL_FROM', 'TestFrom');
+        $config->set('contact.MAIL_TO', 'test@example.com');
+        $config->set('contact.MAIL_NAME', 'TestMailName');
     }
 }
